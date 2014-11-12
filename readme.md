@@ -133,7 +133,7 @@ win.show()
 
 When we first built and run our program, we invoked the compiler directly.  We could do that again, but there are a couple differences.  We now have multiple source files, so we'd have to pass all those to the compiler.  More challenging though, we now have to tell the compiler where the Qt header files are and how to link against the Qt dynamic library.  Rather than do this manually, let's use CMake to handle this for us.
 
-CMake works by looking at a `CMakeLists.txt` file in your folder for instructions on how to build the project.  Luckily for us, there are some built-in directions for working with Qt, which will make this easier.  Here's an example CMakeLists.txt file you can use:
+CMake works by looking at a `CMakeLists.txt` file in your folder for instructions on how to build the project.  Luckily for us, there are some built-in functions/macros for working with Qt, which will make this easier.  Here's an example CMakeLists.txt file you can use:
 
 ```cmake
 # the min version of CMake this file is compatible with
