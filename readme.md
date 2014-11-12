@@ -42,8 +42,8 @@ Every C/C++ program is required to have a function called "main".  This function
 //  the iostream header contains cout among other things
 #include <iostream>
 
-//  this declaration lets us leave of the "std::" when using things in the standard libraries
-//  without it, we'd have to type "std::cout", not we can just type "cout"
+//  this declaration lets us leave off the "std::" when using things in the standard libraries
+//  without it, we'd have to type "std::cout", now we can just type "cout"
 using namespace std;
 
 
