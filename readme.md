@@ -234,6 +234,12 @@ _ui.setupUi(this);
 We'll add a method `buttonClicked()` to our MainWindow class.  Declare it in the header, then implement it in the .cpp file like so:
 
 ```c++
+//  declare the method inside the MainWindow declaration in MainWindow.hpp
+void buttonClicked();
+```
+
+
+```c++
 //  MainWindow.cpp
 
 void MainWindow::buttonClicked() {
