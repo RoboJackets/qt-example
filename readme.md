@@ -5,10 +5,10 @@ This is a quick walkthrough/tutorial on how to setup a simple Qt application.  T
 
 This project is setup as a git repo such that each step along the way that requires file changes is done for you ahead of time as a git commit.  It's best to follow through the directions on your own, but if you get stuck, you can see how how to do it by looking at these git commits.
 
-To see how to do step six, you can do a git diff from step five to step six.
+To see how to do step six, just do:
 
 ```shell
-git diff step5..step6
+git show step6
 ```
 
 The relevant commits have all been [tagged](http://git-scm.com/book/en/v2/Git-Basics-Tagging).  Type `git tag` to see a list.
