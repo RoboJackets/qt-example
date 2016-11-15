@@ -87,6 +87,8 @@ In order to use the QApplication class, you'll have to include the appropriate h
 #include <QtWidgets>
 ```
 
+This step will break our build process, so wait until Step 7 to rebuild your project.
+
 
 ## 6: Add a window
 
@@ -125,7 +127,7 @@ Place this code after the QApplication initialization in main.cpp.  Also, don't 
 
 ```c++
 MainWindow win;
-win.show()
+win.show();
 ```
 
 
