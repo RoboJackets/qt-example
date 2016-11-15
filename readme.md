@@ -216,7 +216,7 @@ git commit -m "setup basic project to display a Qt window"
 
 ## 12: create MainWindow.ui
 
-Using Qt Creator, make a window gui and save it as MainWindow.ui.  Add a PushButton, a text field, and a ListWidget.  When processed by Qt (when we invoke `cmake`), this will create a `ui_MainWindow.h` file in the build directory that contains the code to make a real window look just as it did in the creator.  Once we run `make` again, take a second to open it up and look at it.  The code that this generated is in the setupUi() method of Ui_MainWindow.
+Using Qt Creator, make a window gui (new QtWidgets Application->save to your project directory) and save it as MainWindow.ui.  Add a PushButton, a LineEdit, and a ListWidget.  When processed by Qt (when we invoke `cmake`), this will create a `ui_MainWindow.h` file in the build directory that contains the code to make a real window look just as it did in the creator.  Once we run `make` again, take a second to open it up and look at it.  The code that this generated is in the setupUi() method of Ui_MainWindow.
 
 To add this to our MainWindow class, you'll first add an instance variable for the ui, then call setupUi in our constructor.
 
