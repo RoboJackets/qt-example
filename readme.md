@@ -245,7 +245,7 @@ void buttonClicked();
 //  MainWindow.cpp
 
 void MainWindow::buttonClicked() {
-    QString text = _ui.textField->text();
+    QString text = _ui.lineEdit->text();
     _ui.listWidget->addItem(text);
 }
 ```
@@ -255,7 +255,7 @@ To make this method get called when the button is clicked, we need to add what Q
 ```
 //  MainWindow.cpp constructor
 
-QObject::connect(_ui.button, &QPushButton::clicked, this, &MainWindow::buttonClicked);
+QObject::connect(_ui.pushButton, &QPushButton::clicked, this, &MainWindow::buttonClicked);
 ```
 
 The app should be functional now, so run `make` again and run your app!
